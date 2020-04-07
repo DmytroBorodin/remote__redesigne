@@ -20,3 +20,15 @@ function onScroll (e) {
     }
     lastScrollTop = top;
 }
+
+let winWrap = document.querySelector('.windows__wrap');
+let listItem = document.querySelector('.list__item');
+let closeBtn = document.querySelector('.close__btn');
+
+listItem.addEventListener('mouseover', function(){
+	winWrap.classList.remove('hidden__block');
+	nav.classList.add("border__nav");
+})
+closeBtn.addEventListener('click', function(){
+	winWrap.classList.add('hidden__block');
+})
