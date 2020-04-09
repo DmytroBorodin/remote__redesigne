@@ -67,48 +67,8 @@
 					</p>
 					<span class="bg_an"></span>
 				</a>
-				<button class="video__btn">Watch Add 
-					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="    http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                 viewBox="0 0 512 512" style="enable-background:new #fff;" xml:space="preserve">
-					<g>
-						<g>
-							<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
-								c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
-								l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
-								c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/>
-						</g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					<g>
-					</g>
-					</svg>
+				<button class="video__btn"><span>Watch Add</span> 
+					<div class="arrow"><span class="icon-next"></span></div>
 				</button>
 			</div>
 		</div>
@@ -120,31 +80,39 @@
 				<p class="demo">Demo</p>
 			</div>
 		</div>
-
-		<!-- menu windows -->
+		<div class="video__block video__hidden">
+			<div class="video__inner__block">
+				<iframe class='video' src="https://www.youtube.com/embed/kjlu9RRHcbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class= "video__close__btn">
+					<span class="icon-cancel"></span>
+				</div>
+			</div>
+		</div>
+		<!-- menu windows start -->
 		<div class="wrap windows__wrap hidden__block">
 			<div class="container menu__block__container">
 				<div class="menu__links__block">
 					<div class="first__menu__block">
 						<h3 class="first__menu__title">Workflow</h3>
 						<ul class="first__menu__list">
-							<li class="first__menu__item">
-								<a href="" class="first__menu__link">
+							<li  class="first__menu__item active" >
+								<a href="#" filter ='on' id='itWork' class="first__menu__link first__link"
+								>
 									It Workflows
 								</a>	
 							</li>
-							<li class="first__menu__item">
-								<a href="" class="first__menu__link">
+							<li class="first__menu__item" >
+								<a href="#" id='emploee' filter ='off' class="first__menu__link first__link" >
 									Emploee Workflows
 								</a>			
 							</li>
-							<li class="first__menu__item">
-								<a href="" class="first__menu__link">
+							<li class="first__menu__item" >
+								<a href="#" class="first__menu__link first__link" id='customer'>
 									Customer Workflows
 								</a>	
 							</li>
 							<li class="first__menu__item">
-								<a href="" class="first__menu__link">
+								<a href="#" class="first__menu__link first__link"  id='app'>
 									Build Your Own App
 								</a>	
 							</li>
@@ -152,43 +120,100 @@
 						<div class="border__block">
 						</div>
 						<ul class="first-menu__list">
-							<li class="first-menu__item">
+							<li class="first-menu__item first__link">
 								<a href="" class="first-menu__link">
 									Industry Solutions
 								</a>
 							</li>
-							<li class="first-menu__item">
+							<li class="first-menu__item first__link">
 								<a href="" class="first-menu__link">
 									Products A-Z
 								</a>
 							</li>
 						</ul>
 					</div>
-					<div class="second__menu__block">
+					<div class="second__menu__block" >
 						<h3 class="second__menu__title first__menu__title">
-							Products
-						</h3>
-						<ul class="itworkflow__list first__menu__list">
-							<li class="itworkflow__list__item first__menu__item">
-								<a href="" class="itworkflow__list__link first__menu__link">
-									Overwiev of it Workflows
-								</a>
-							</li>
-							<li class="itworkflow__list__item first__menu__item" >
-								<a href="" class="itworkflow__list__link first__menu__link">
-									Overwiev of it Workflows
-								</a>
-							</li>
-						</ul>
+								Products
+							</h3>
+						<div class="second-inner__menu__block shown__block" idname="itWork">
+							<ul class="itworkflow__list first__menu__list">
+								<li class="itworkflow__list__item first__menu__item active">
+									<a href="#" id='work_first'class="workflow__list__link first__menu__link" >
+										Overwiev of it Workflows
+									</a>
+								</li>
+								<li class="itworkflow__list__item first__menu__item" >
+									<a href="#" id='work_second' class="workflow__list__link first__menu__link">
+										Overwiev of it Workflows
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="second-inner__menu__block hidden__block" idname="emploee">
+							<ul class="itworkflow__list first__menu__list">
+								<li class="itworkflow__list__item first__menu__item active">
+									<a href="" class="itworkflow__list__link first__menu__link">
+										Overview of
+									</a>
+								</li>
+								<li class="itworkflow__list__item first__menu__item" >
+									<a href="" class="itworkflow__list__link first__menu__link">
+										Overview of
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="second-inner__menu__block hidden__block" idname="customer">
+							<ul class="itworkflow__list first__menu__list">
+								<li class="itworkflow__list__item first__menu__item active">
+									<a href="" class="itworkflow__list__link first__menu__link">
+										Overview of customer
+									</a>
+								</li>
+								<li class="itworkflow__list__item first__menu__item" >
+									<a href="" class="itworkflow__list__link first__menu__link">
+										Overview of customer
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="second-inner__menu__block hidden__block" idname="app">
+							<ul class="itworkflow__list first__menu__list">
+								<li class="itworkflow__list__item first__menu__item active">
+									<a href="" class="itworkflow__list__link first__menu__link">
+										Overview of app
+									</a>
+								</li>
+								<li class="itworkflow__list__item first__menu__item" >
+									<a href="" class="itworkflow__list__link first__menu__link">
+										Overview of app
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="info__block">
 					<div class="close__btn">
 						<span class="icon-cancel"></span>
 					</div>
-					<div class="inner-info__block">
+					<div class="inner-info__block" idname='work_first'>
 						<h3 class="inner-info__block__title">
 							It workflows
+						</h3>
+						<p class="inner-info__block__text">
+							Take control of IT chaos and transform your business. Connect your enterprise with digital IT workflows on a single, unified platform.
+						</p>
+						<div class="inner-info__btn-block">
+							<a href="#" class="frst__btn">
+								Learn More
+							</a>
+						</div>
+					</div>
+					<div class="inner-info__block hidden__block" idname='work_second'>
+						<h3 class="inner-info__block__title">
+							It workflows It workflows
 						</h3>
 						<p class="inner-info__block__text">
 							Take control of IT chaos and transform your business. Connect your enterprise with digital IT workflows on a single, unified platform.
@@ -202,9 +227,92 @@
 				</div>
 			</div>
 		</div>
-		<!-- menu windows -->
+		<!-- menu windows end -->
 	</header>
+	<!-- Covid section start -->
+	<section class="section covid__section">
+		<div class="wrap">
+			<div class="container">
+				<div class="section__text__block">
+					<h3 class="section__title">
+						Our response to COVID-19
+					</h3>
+					<p class="section__text">
+						Introducing a COVID-19 customer care program with apps and resources to support your crisis response.
+					</p>
+				</div>
+				<div class="section__btns">
+					<div class="section-inner__btns">
+						<a href="#" class="frst__section__btn">
+							<p class="absolute__btn">
+								Get Details
+							</p>
+							<span class="bg__section__btn"></span>
+						</a>
+						<a href="#" class="scnd__section__btn">			Visit Community
+							<div class="arrow"><span class="icon-next"></span></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Covid section end-->
 
+	<!-- Text section start -->
+	<section class="section text__section">
+		<div class="wrap">
+			<h3 class="section__title white__text text__width">
+				ServiceNow gives you the power to make work, work better. So employees work the way they want to, not how software dictates they have to. And customers can get what they need, when they need it.
+			</h3>
+			<h3 class="section__title green__text text__width">
+				That’s what we call the smarter way to workflow™.
+			</h3>
+		</div>
+	</section>
+	<!-- Text section end -->
+
+	<!-- Experiance section start-->
+		<section class="section experience__section">
+			<div class="wrap">
+				<div class="container">
+					<div class="img__block">
+						<img src="" alt="" class="section__img">	
+					</div>
+					<div class="section__text__block">
+						<h3 class="section__title">
+							Experiences matter
+						</h3>
+						<p class="section__text">
+							ServiceNow enables the digital workflows that create great experiences and unlock productivity for employees and enterprise alike. Great experiences unleash productivity and fuel innovation. And that’s how great companies win. Choose from our workflows or 
+							<a href="" class="text__link">build your own app</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- Experiance section end-->
+
+	<!-- Work section start -->
+	<section class="section work__section">
+			<div class="wrap">
+				<div class="container">
+					<div class="img__block second__block">
+						<img src="" alt="" class="section__img">	
+					</div>
+					<div class="section__text__block first__block">
+						<h3 class="section__title">
+							Make work, work better
+						</h3>
+						<p class="section__text">
+							Built on the <a href="" class="text__link">Now Platform</a>, our product portfolio delivers the  <a href="" class="text__link">IT</a>,  <a href="" class="text__link">Employee</a>, and  <a href="" class="text__link">Customer</a> Workflows that matter—with enterprise solutions to help drive every part of your digital transformation. Create the great experiences you want and unlock the productivity you need, now with native mobile capabilities for everyday work across the enterprise.
+						</p>
+						<div class="arrow"><span class="icon-next"></span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Work section end -->
 	<script src="js/main.js"></script>
 </body>
 </html>
